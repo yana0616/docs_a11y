@@ -4,7 +4,8 @@ module.exports = {
   ],
   locales: {
     '/': {
-      lang: 'ja'
+      lang: 'ja',
+      title: 'Webアクセシビリティまとめ'
     }
   },
   themeConfig: {
