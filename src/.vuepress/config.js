@@ -9,11 +9,11 @@ module.exports = {
     }
   },
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Webアクセシビリティとは？', link: '/about/' },
-      { text: 'チートシート', link: '/cheatsheet/' },
-    ],
+    // nav: [
+    //   { text: 'Home', link: '/' },
+    //   { text: 'Webアクセシビリティとは？', link: '/about/' },
+    //   { text: 'チートシート', link: '/cheatsheet/' },
+    // ],
     search: false,
     sidebar: [
       {
