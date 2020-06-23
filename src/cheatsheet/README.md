@@ -1,13 +1,12 @@
 ---
-title: Web a11yチートシート
+title: Web a11y達成基準まとめ
 ---
 
-# Webアクセシビリティ達成基準チートシート
+# Webアクセシビリティ達成基準まとめ
 
-レベルAおよびレベルAAを達成するために必要な対応について、Webサイトの内容にフィーチャーしてまとめます。  
-ベースは
-[『JIS X 8341−3：2016 達成基準 早見表（レベルA＆AA）』](https://waic.jp/files/cheatsheet/waic_jis-x-8341-3_cheatsheet_201812.pdf)
-です。
+レベルAおよびレベルAAを達成するために必要な対応について、Webサイトの内容にフォーカスしてまとめます。  
+あとはフロントエンド向けに書いているので、一部話が偏ってる可能性もあるかもです。  
+ベースは[『JIS X 8341−3：2016 達成基準 早見表（レベルA＆AA）』](https://waic.jp/files/cheatsheet/waic_jis-x-8341-3_cheatsheet_201812.pdf)。
 
 ## フロント側ですぐに対応できそうな対応
 下記対応をとってもらえれば、Webアクセシビリティ対応基準レベルAに配慮したコーディングが可能です。
@@ -51,7 +50,7 @@ title: Web a11yチートシート
 * 複数入力項目がある場合はグルーピングする
     * `<fieldset>`と`<legend>`を利用
         * [fieldset要素について](https://developer.mozilla.org/ja/docs/Web/HTML/Element/fieldset)
-        * [lagend要素について](https://developer.mozilla.org/ja/docs/Web/HTML/Element/legend)
+        * [legend要素について](https://developer.mozilla.org/ja/docs/Web/HTML/Element/legend)
 * エラーメッセージをテキストで分かりやすく明記する
     * エラーが出たらフォーカスをエラー箇所に合わせるとなお良し
     * [aria-invalid属性](https://developer.mozilla.org/ja/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute)を利用

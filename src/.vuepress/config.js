@@ -25,9 +25,9 @@ module.exports = {
         path: '/about/'
       },
       {
-        title: 'チートシート',
+        title: 'Web a11y達成基準まとめ',
         path: '/cheatsheet/',
-        collapsable: false,
+        // collapsable: false,
         sidebarDepth: 1,
         children: [
           { title: 'トップ', path: '/cheatsheet/' },
