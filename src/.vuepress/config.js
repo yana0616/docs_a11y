@@ -4,7 +4,8 @@ module.exports = {
   ],
   locales: {
     '/': {
-      lang: 'ja'
+      lang: 'ja',
+      title: 'Webアクセシビリティまとめ'
     }
   },
   themeConfig: {
@@ -32,11 +33,11 @@ module.exports = {
           { title: 'トップ', path: '/cheatsheet/' },
           { title: 'サイト全体・ページ全体', path: '/cheatsheet/all.html' },
           { title: '動画・音声', path: '/cheatsheet/media.html' },
-          // { title: 'テキスト', path: '/cheatsheet/text.html' },
-          // { title: '制限時間つきコンテンツ', path: '/cheatsheet/limit.html' },
-          // { title: '画像', path: '/cheatsheet/figure.html' },
-          // { title: '感覚的特徴', path: '/cheatsheet/features.html' },
-          // { title: 'フォーム', path: '/cheatsheet/form.html' }
+          { title: 'テキスト', path: '/cheatsheet/text.html' },
+          { title: '制限時間つきコンテンツ', path: '/cheatsheet/limit.html' },
+          { title: '画像', path: '/cheatsheet/picture.html' },
+          { title: '感覚的特徴', path: '/cheatsheet/features.html' },
+          { title: 'フォーム', path: '/cheatsheet/form.html' }
         ]
       },
 
