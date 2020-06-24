@@ -66,11 +66,12 @@ title: サイト全体・ページ全体｜Web a11y達成基準まとめ
 * `<header>` / `<footer>` 
 * `<main>` / `<aside>`
 * `<aritcle>` / `<section>`
+    * この2つにおいては、必ず子要素に見出しタグを含める必要あり！
 * `<h1>` / `<h2>`などの見出しタグ
 * `<p>` / `<a>`
 * `<ul>` / `<ol>` / `<dt>`などリスト系
 
-などを積極的に利用しましょう。  
+などを利用するようにしましょう。
 
 :::
 
@@ -100,8 +101,14 @@ title: サイト全体・ページ全体｜Web a11y達成基準まとめ
 :::
 
 ### 【レベルA】[ブロックスキップ](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html)
-メインコンテンツエリアへ直接移動するリンクを各ページの先頭に追加する
-（キーボード利用者は、メインコンテンツに行き着くまでに、ヘッダーやらナビゲーションやらいくつもtabキーで処理をさせなければいけなくなってしまうため）
+メインコンテンツエリアへ直接移動するためのリンクを各ページの先頭に追加する  
+（メインコンテンツに行き着くまでに、ヘッダーやらナビゲーションやらいくつもTabキーで処理をさせる必要があるため）
+
+::: warning 補足
+`<main>`を使用していれば、スクリーンリーダーの利用者はいつでもメインコンテンツ位置に移動できる（`role="main"`の意味合いがあるので、メインコンテンツだと分かる）ため、わざわざ提供しなくてもいいという考え方もあるようです。
+
+【参考（ちょっと古めの記事だけど）】[『スキップリンクは絶対に必要なの？』（WebA11y.jp）](https://weba11y.jp/basics/faq/skip-link/)
+:::
 
 ### 【レベルA】[ページタイトル](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
 
@@ -120,6 +127,8 @@ title: サイト全体・ページ全体｜Web a11y達成基準まとめ
 
 ### 【レベルA】[フォーカス順序](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
 正しい順番でフォーカスが当たるようになっている
+* フォーカスは[`tabindex`属性](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/tabindex)を利用することで制御することができるので、それをむやみやたらに使わない
+* 意味と操作性を保った状態で、フォーカスを制御するのはOK
 
 ### 【レベルA】[ページの言語](https://waic.jp/docs/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 * HTMLを使用する
@@ -131,16 +140,15 @@ title: サイト全体・ページ全体｜Web a11y達成基準まとめ
 * フォーカス時にはそれに合った動作をする
 * フォーカスから外れた際には、その動作は実行されない
 
-### 【レベルAA】[見出し及びラベル](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html)
 
-* セマンティックな見出し構成である、かつ内容が分かるように記述されている
-* 内容が分かるようにラベルが記述されている（これによりコンポーネントが識別しやすくなる）
+### 【レベルAA】[見出し及びラベル](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html)
+セマンティックな見出し構成である、かつ内容が分かるように記述されている
 
 ### 【レベルAA】[フォーカスの可視化](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html)
 キーボード操作が可能なUIは、フォーカスが見えるようにして、利用者が認識しやすいようにする
 
 ### 【レベルAA】[一部分の言語](https://waic.jp/docs/UNDERSTANDING-WCAG20/meaning-other-lang-id.html)
 
-* そのページの他言語版へのリンクについては、lang属性を示すことで、他言語であることを示す
-* 引用文で、一部他言語が使用されている場合、その言語をスクリーンリーダーで正確に読み上げてもらうために、発音規制を変更するために、lang属性を使用する
+* そのページの他言語版へのリンクについては、lang属性を示すことで他言語であることを示す
+* 引用文で、一部他言語が使用されている場合、その言語をスクリーンリーダーで正確に読み上げてもらうために、lang属性を指定して、発音規制を変更する
 
