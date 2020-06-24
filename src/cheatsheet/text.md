@@ -38,7 +38,7 @@ title: テキスト｜Web a11y達成基準まとめ
 <a title="レジチョイスのサイトへ" href="https://rejichoice.jp/" target="_blank" rel="noopener">詳細はこちら</a>
 ```
 
-:::tip ポイント
+:::warning 補足
 よく「詳細はこちら」とか「こちら」などにリンクを貼ることが多いが、これだとリンク先が何を示しているか分からないため、title属性をつけると良い。
 :::
 
@@ -64,6 +64,11 @@ title: テキスト｜Web a11y達成基準まとめ
 
 * 大きな文字、付随的なもの（アクティブでないUI、単なる装飾など）、ロゴなどは除き、4.5:1のコントラスト比を確保する
 * 十分なコントラスト比のある表示に切り替えられるようなコントロールを用意する
+
+::: warning 参考
+文字と背景のコントラスト比がチェックできるサイト  
+[Colorable](https://colorable.jxnblk.com/)
+:::
 
 ### 【レベルAA】[テキストのサイズ変更](https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html)
 
