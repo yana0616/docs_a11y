@@ -19,7 +19,7 @@ title: フォーム｜Web a11y達成基準まとめ
 * HTMLタグで不足がある部分に関しては、role属性やaria属性を利用して、セマンティックなマークアップができている
 
 ### 【レベルA】[タイミング調整可能](https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html)
-フォームとかログインとかでよくある「一定期間入力がありませんでした、続けますか？」みたいな感じのやつを出すようにして、ユーザー側でコンテンツを引き続き利用できるか選択できる余地を与える。
+フォームとかログインとかでよくある「一定期間入力がありませんでした、続けますか？」みたいな感じのやつを出すようにして、利用者側でコンテンツを引き続き利用できるか選択できる余地を与える。
 
 ### 【レベルA】[フォーカス順序](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
 正しい順番でフォーカスが当たるようになっている
