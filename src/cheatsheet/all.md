@@ -127,10 +127,12 @@ title: サイト全体・ページ全体｜Web a11y達成基準まとめ
 
 ### 【レベルA】[フォーカス順序](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
 正しい順番でフォーカスが当たるようになっている
+
 * フォーカスは[`tabindex`属性](https://developer.mozilla.org/ja/docs/Web/HTML/Global_attributes/tabindex)を利用することで制御することができるので、それをむやみやたらに使わない
 * 意味と操作性を保った状態で、フォーカスを制御するのはOK
 
 ### 【レベルA】[ページの言語](https://waic.jp/docs/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
+
 * HTMLを使用する
 * lang属性を設定する（スクリーンリーダーで対象言語に合わせた読み方をしてくれる）
 
