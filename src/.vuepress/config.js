@@ -40,7 +40,20 @@ module.exports = {
           { title: 'フォーム', path: '/cheatsheet/form.html' }
         ]
       },
-
+      {
+        title: 'a11yを考慮したコーディング例まとめ',
+        path: '/tips/',
+        sidebarDrpth: 1,
+        children: [
+          { title: 'アコーディオン', path: '/tips/accordion.html' },
+          { title: 'タブ', path: '/tips/tabs.html' },
+          { title: 'フォーム', path: '/tips/form.html' },
+          // { title: '', path: '/tips/' },
+          // { title: '', path: '/tips/' },
+          // { title: '', path: '/tips/' },
+          // { title: '', path: '/tips/' },
+        ]
+      },
     ]
   }
   // plugins: [
