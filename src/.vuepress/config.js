@@ -45,10 +45,10 @@ module.exports = {
         path: '/tips/',
         sidebarDrpth: 1,
         children: [
+          { title: 'サイト全体で使えるやつ', path: '/tips/all.html' },
           { title: 'アコーディオン', path: '/tips/accordion.html' },
           { title: 'タブ', path: '/tips/tabs.html' },
           { title: 'フォーム', path: '/tips/form.html' },
-          // { title: '', path: '/tips/' },
           // { title: '', path: '/tips/' },
           // { title: '', path: '/tips/' },
           // { title: '', path: '/tips/' },
