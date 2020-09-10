@@ -1,5 +1,8 @@
 name: Build project and Run Lighthouse CI
-on: [merge]
+on:
+  push:
+    branches:
+      - development
 jobs:
   lhci:
     name: Lighthouse CI
